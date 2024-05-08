@@ -31,7 +31,6 @@ const FormHistoryScreen = ({route}: any) => {
       user_id: parseInt(userId, 10),
       expense_id: parseInt(expenseId, 10),
     };
-    console.log(values, 'values');
     dispatch(createHistory({values: values}));
     navigation.navigate('Home');
   };
